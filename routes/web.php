@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('front.index');
 });
+
+Route::post('instrukcje', 'ManualController@validateEmail');
+Route::get('instrukcje', ['middleware' => 'check-customer', 'uses' => 'ManualController@manuals']);
+Route::get('{id}-{slug}', ['middleware' => 'check-customer', 'uses' => 'ManualController@manual']);
