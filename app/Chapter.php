@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Chapter extends Model
 {
     protected $fillable = [
-        'name', 'content'
+        'name', 'link_rewrite', 'content'
     ];
 }

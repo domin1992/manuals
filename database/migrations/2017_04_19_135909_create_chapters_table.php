@@ -16,6 +16,7 @@ class CreateChaptersTable extends Migration
         Schema::create('chapters', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('link_rewrite');
             $table->text('content')->nullable();
             $table->timestamps();
         });

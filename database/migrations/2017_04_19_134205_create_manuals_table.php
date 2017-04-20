@@ -16,6 +16,7 @@ class CreateManualsTable extends Migration
         Schema::create('manuals', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('link_rewrite');
             $table->timestamps();
         });
     }

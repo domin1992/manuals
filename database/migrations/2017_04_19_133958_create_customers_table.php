@@ -28,6 +28,6 @@ class CreateCustomersTable extends Migration
      */
     public function down()
     {
-        Schame::drop('customers');
+        Schema::drop('customers');
     }
 }
